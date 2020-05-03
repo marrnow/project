@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>home</title>
+
+</head>
+<body>
+<div class="container">
+    <h2>BitCoin Table</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Currency</th>
+            <th>15m</th>
+            <th>last</th>
+            <th>buy</th>
+            <th>sell</th>
+            <th>symbol</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>USD</th>
+            <th th:text="${USD.m}"></th>
+            <th th:text="${USD.last}"></th>
+            <th th:text="${USD.buy}"></th>
+            <th th:text="${USD.sell}"></th>
+            <th th:text="${USD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>AUD</th>
+            <th th:text="${AUD.m}"></th>
+            <th th:text="${AUD.last}"></th>
+            <th th:text="${AUD.buy}"></th>
+            <th th:text="${AUD.sell}"></th>
+            <th th:text="${AUD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>BRL</th>
+            <th th:text="${BRL.m}"></th>
+            <th th:text="${BRL.last}"></th>
+            <th th:text="${BRL.buy}"></th>
+            <th th:text="${BRL.sell}"></th>
+            <th th:text="${BRL.symbol}"></th>
+        </tr>
+        <tr>
+            <th>CAD</th>
+            <th th:text="${CAD.m}"></th>
+            <th th:text="${CAD.last}"></th>
+            <th th:text="${CAD.buy}"></th>
+            <th th:text="${CAD.sell}"></th>
+            <th th:text="${CAD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>CHF</th>
+            <th th:text="${CHF.m}"></th>
+            <th th:text="${CHF.last}"></th>
+            <th th:text="${CHF.buy}"></th>
+            <th th:text="${CHF.sell}"></th>
+            <th th:text="${CHF.symbol}"></th>
+        </tr>
+        <tr>
+            <th>CLP</th>
+            <th th:text="${CLP.m}"></th>
+            <th th:text="${CLP.last}"></th>
+            <th th:text="${CLP.buy}"></th>
+            <th th:text="${CLP.sell}"></th>
+            <th th:text="${CLP.symbol}"></th>
+        </tr>
+        <tr>
+            <th>CNY</th>
+            <th th:text="${CNY.m}"></th>
+            <th th:text="${CNY.last}"></th>
+            <th th:text="${CNY.buy}"></th>
+            <th th:text="${CNY.sell}"></th>
+            <th th:text="${CNY.symbol}"></th>
+        </tr>
+        <tr>
+            <th>DKK</th>
+            <th th:text="${DKK.m}"></th>
+            <th th:text="${DKK.last}"></th>
+            <th th:text="${DKK.buy}"></th>
+            <th th:text="${DKK.sell}"></th>
+            <th th:text="${DKK.symbol}"></th>
+        </tr>
+        <tr>
+            <th>EUR</th>
+            <th th:text="${EUR.m}"></th>
+            <th th:text="${EUR.last}"></th>
+            <th th:text="${EUR.buy}"></th>
+            <th th:text="${EUR.sell}"></th>
+            <th th:text="${EUR.symbol}"></th>
+        </tr>
+        <tr>
+            <th>GBP</th>
+            <th th:text="${GBP.m}"></th>
+            <th th:text="${GBP.last}"></th>
+            <th th:text="${GBP.buy}"></th>
+            <th th:text="${GBP.sell}"></th>
+            <th th:text="${GBP.symbol}"></th>
+        </tr>
+        <tr>
+            <th>HKD</th>
+            <th th:text="${HKD.m}"></th>
+            <th th:text="${HKD.last}"></th>
+            <th th:text="${HKD.buy}"></th>
+            <th th:text="${HKD.sell}"></th>
+            <th th:text="${HKD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>INR</th>
+            <th th:text="${INR.m}"></th>
+            <th th:text="${INR.last}"></th>
+            <th th:text="${INR.buy}"></th>
+            <th th:text="${INR.sell}"></th>
+            <th th:text="${INR.symbol}"></th>
+        </tr>
+        <tr>
+            <th>ISK</th>
+            <th th:text="${ISK.m}"></th>
+            <th th:text="${ISK.last}"></th>
+            <th th:text="${ISK.buy}"></th>
+            <th th:text="${ISK.sell}"></th>
+            <th th:text="${ISK.symbol}"></th>
+        </tr>
+        <tr>
+            <th>JPY</th>
+            <th th:text="${JPY.m}"></th>
+            <th th:text="${JPY.last}"></th>
+            <th th:text="${JPY.buy}"></th>
+            <th th:text="${JPY.sell}"></th>
+            <th th:text="${JPY.symbol}"></th>
+        </tr>
+        <tr>
+            <th>KRW</th>
+            <th th:text="${KRW.m}"></th>
+            <th th:text="${KRW.last}"></th>
+            <th th:text="${KRW.buy}"></th>
+            <th th:text="${KRW.sell}"></th>
+            <th th:text="${KRW.symbol}"></th>
+        </tr>
+        <tr>
+            <th>NZD</th>
+            <th th:text="${NZD.m}"></th>
+            <th th:text="${NZD.last}"></th>
+            <th th:text="${NZD.buy}"></th>
+            <th th:text="${NZD.sell}"></th>
+            <th th:text="${NZD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>PLN</th>
+            <th th:text="${PLN.m}"></th>
+            <th th:text="${PLN.last}"></th>
+            <th th:text="${PLN.buy}"></th>
+            <th th:text="${PLN.sell}"></th>
+            <th th:text="${PLN.symbol}"></th>
+        </tr>
+        <tr>
+            <th>RUB</th>
+            <th th:text="${RUB.m}"></th>
+            <th th:text="${RUB.last}"></th>
+            <th th:text="${RUB.buy}"></th>
+            <th th:text="${RUB.sell}"></th>
+            <th th:text="${RUB.symbol}"></th>
+        </tr>
+        <tr>
+            <th>SEK</th>
+            <th th:text="${SEK.m}"></th>
+            <th th:text="${SEK.last}"></th>
+            <th th:text="${SEK.buy}"></th>
+            <th th:text="${SEK.sell}"></th>
+            <th th:text="${SEK.symbol}"></th>
+        </tr>
+        <tr>
+            <th>SGD</th>
+            <th th:text="${SGD.m}"></th>
+            <th th:text="${SGD.last}"></th>
+            <th th:text="${SGD.buy}"></th>
+            <th th:text="${SGD.sell}"></th>
+            <th th:text="${SGD.symbol}"></th>
+        </tr>
+        <tr>
+            <th>THB</th>
+            <th th:text="${THB.m}"></th>
+            <th th:text="${THB.last}"></th>
+            <th th:text="${THB.buy}"></th>
+            <th th:text="${THB.sell}"></th>
+            <th th:text="${THB.symbol}"></th>
+        </tr>
+        <tr>
+            <th>TRY</th>
+            <th th:text="${TRY.m}"></th>
+            <th th:text="${TRY.last}"></th>
+            <th th:text="${TRY.buy}"></th>
+            <th th:text="${TRY.sell}"></th>
+            <th th:text="${TRY.symbol}"></th>
+        </tr>
+        <tr>
+            <th>TWD</th>
+            <th th:text="${TWD.m}"></th>
+            <th th:text="${TWD.last}"></th>
+            <th th:text="${TWD.buy}"></th>
+            <th th:text="${TWD.sell}"></th>
+            <th th:text="${TWD.symbol}"></th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
